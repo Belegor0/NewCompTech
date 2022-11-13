@@ -1,6 +1,5 @@
 function show(){
-    let link = document.querySelector('link[rel="import"]');
-    let div = link.import.querySelector('div');
-    let clone = document.importNode(div.content, true);
-    document.querySelector('#container1').appendChild(clone);
+    var doc=document.querySelector('link[rel="import"]').import;
+    var text=doc.querySelector('.cont1');
+    document.body.appendChild(text.cloneNode(true));
 }
