@@ -41,9 +41,9 @@
 
 .tabs__pane {
     display: none;
-    height: 100%;
 }
 
 .tabs__pane_show {
     display: block;
+    height: 100%;
 }
