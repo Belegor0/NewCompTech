@@ -18,13 +18,13 @@ function goToSlide(n) {
 var playing = true;
 var pauseButton = document.getElementById('pause');
 function pauseSlideshow() {
-    pauseButton.innerHTML = 'Продолжить';
+    pauseButton.innerHTML = '&#9658;';
     pauseButton.style.borderColor = '#FF0000'
     playing = false;
     clearInterval(slideInterval);
 }
 function playSlideshow() {
-    pauseButton.innerHTML = 'Пауза';
+    pauseButton.innerHTML = '&#10073;&#10073;';
     pauseButton.style.borderColor = '#008000'
     playing = true;
     slideInterval = setInterval(nextSlide,interval);
