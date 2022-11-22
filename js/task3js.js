@@ -3,7 +3,6 @@ var next1 = document.getElementById('next1');
 var next2 = document.getElementById('next2');
 var next3 = document.getElementById('next3');
 var next4 = document.getElementById('next4');
-var rest = document.getElementById('rest');
 var first = document.querySelectorAll('input[name="first"]');
 var second = document.querySelectorAll('input[name="second"]');
 var third = document.querySelectorAll('input[name="third"]');
@@ -23,8 +22,6 @@ next3.onclick = function() {
     divs[3].className = 'quest quest_show';
 }
 next4.onclick = function () {
-    divs[3].className = 'quest';
-    divs[4].className = 'quest quest_show';
     for (var i=0; i<first.length; i++) {
         if (first[i].checked) {
             checkedf[0]=Number(first[i].value);
@@ -48,15 +45,14 @@ next4.onclick = function () {
     for (var i=0; i<checkedf.length; i++) {
         checks+=Number(checkedf[i])
     }
-    checks=(checks*100/4);
-    document.getElementById('result').innerHTML=String(checks)+'%'
-}
-rest.onclick = function () {
-    for (let radio of document.querySelectorAll('[type="radio"]')) {
-        radio.checked = false;
-      }
-    checkedf = [Number(0), Number(0), Number(0), Number(0)];
-    checks = Number(0);
-    divs[4].className = 'quest'
-    divs[0].className = 'quest quest_show'
+    checks=Math.round(checks/4*5);
+    if (confirm('Ваша оценка '+String(checks))) {
+        for (let radio of document.querySelectorAll('[type="radio"]')) {
+            radio.checked = false;
+          }
+        checkedf = [Number(0), Number(0), Number(0), Number(0)];
+        checks = Number(0);
+        divs[3].className = 'quest'
+        divs[0].className = 'quest quest_show'
+    }
 }
