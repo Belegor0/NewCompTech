@@ -57,10 +57,18 @@ html {
 	transition: all 0.2s ease;
 }
 
+.keys span:hover {
+	background: rgb(234, 228, 228);
+}
+
 .keys span.operator {
 	background: white;
     color: black;
 	margin-right: 0;
+}
+
+.keys span.operator:hover {
+	background: rgb(243, 230, 207);
 }
 
 .keys span.eval {
@@ -68,11 +76,17 @@ html {
 	color: black;
 }
 
+.keys span.eval:hover {
+	background: rgb(192, 226, 238);
+}
+
 .top span.clear {
 	background: white;
 	color: black;
 }
-
+ .top span.clear:hover {
+	background: rgb(247, 210, 187);
+ }
 .keys span:active {
 	top: 4px;
 }

@@ -9,6 +9,7 @@
     z-index: 1;
     font-size: 30;
     margin-left: 200;
+    font-family: Comic Sans, cursive;
 }
 
 .quest_show{
@@ -18,4 +19,5 @@
 
 input[type='button'] {
     font-size: 30;
+    font-family: Comic Sans, cursive;
 }
