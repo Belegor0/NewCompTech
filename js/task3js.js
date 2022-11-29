@@ -43,7 +43,7 @@ next4.onclick = function () {
         }
     }
     for (var i=0; i<checkedf.length; i++) {
-        checks+=Number(checkedf[i])
+        checks+=Number(checkedf[i]);
     }
     checks=Math.round(checks/4*5);
     if (confirm('Ваша оценка '+String(checks))) {
@@ -52,7 +52,7 @@ next4.onclick = function () {
           }
         checkedf = [Number(0), Number(0), Number(0), Number(0)];
         checks = Number(0);
-        divs[3].className = 'quest'
-        divs[0].className = 'quest quest_show'
+        divs[3].className = 'quest';
+        divs[0].className = 'quest quest_show';
     }
 }
