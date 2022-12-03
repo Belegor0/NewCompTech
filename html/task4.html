@@ -1,35 +1,66 @@
 <link rel="stylesheet" href="../css/task4style.css">
+<div>
     <ul class="products clearfix">
         <li class="product-wrapper">
             <div class="product product-photo">
                 <img src="../data/Task4/milk.png">
                 <p>Молоко</p>
-                <input class='buye' type="button" value="110 р.">
+                <div class='bye'>
+                    <input type="button" value="-" class='controls' id='1-'>
+                    <span class='price'>110 р.</span>   
+                    <input type="button" value="+" class='controls' id='1+'>
+                </div>
             </div>
         </li>
         <li class="product-wrapper">
             <div class="product product-photo">
                 <img src="../data/Task4/smetana.png">
                 <p>Сметана</p>
+                <div class='bye'>
+                    <input type="button" value="-" class='controls' id='2-'>
+                    <span class='price'>95 р.</span>   
+                    <input type="button" value="+" class='controls' id='2+'>
+                </div>
             </div>
         </li>
         <li class="product-wrapper">
             <div class="product product-photo">
                 <img src="../data/Task4/tvorog.png">
                 <p>Творог</p>
+                <div class='bye'>
+                    <input type="button" value="-" class='controls' id='3-'>
+                    <span class='price'>68 р.</span>   
+                    <input type="button" value="+" class='controls' id='3+'>
+                </div>
             </div>
         </li>
         <li class="product-wrapper">
             <div class="product product-photo">
                 <img src="../data/Task4/kefir.png">
                 <p>Кефир</p>
+                <div class='bye'>
+                    <input type="button" value="-" class='controls' id='4-'>
+                    <span class='price'>142 р.</span>   
+                    <input type="button" value="+" class='controls' id='4+'>
+                </div>
             </div>
         </li>
         <li class="product-wrapper">
             <div class="product product-photo">
                 <img src="../data/Task4/yogurt.png">
                 <p>Йогурт</p>
+                <div class='bye'>
+                    <input type="button" value="-" class='controls' id='5-'>
+                    <span class='price'>76 р.</span>   
+                    <input type="button" value="+" class='controls' id='5+'>
+                </div>
             </div>
         </li>
     </ul>
-</table>
+</div>
+<div class='cart'>
+    <span class='inner-cart top-cart'>Корзина:</span> <br>
+    <span class='inner-cart' id='inner-cart'></span> <br>
+    <input type="button" class='cart-controls' value="Очистить" id='clear'>
+</div>
+<script src="../js/task4js.js"></script>
