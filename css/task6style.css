@@ -1,0 +1,53 @@
+ul {
+    list-style-type: none;
+}
+
+.city {
+    position: absolute;
+    margin-left: 30px;
+}
+
+.monument {
+    position: absolute;
+    margin-left: 480px;
+}
+
+.citybtn {
+    font-size: 25;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 300px;
+    margin-top: 20px;
+    background-color: cornsilk;
+    margin-left: -40;
+}
+
+.monbtn {
+    font-size: 25;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 300px;
+    margin-top: 20px;
+    background-color: lightpink;
+    margin-left: -40;
+}
+
+.citybtnact:hover {
+    background-color: rgb(187, 179, 148);
+}
+
+.monbtnact:hover {
+    background-color: rgb(201, 134, 144);
+}
+
+.control {
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 330px;
+    height: 50px;
+    font-size: 25;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
+}
+
+.control:hover {
+    background-color: rgb(201, 230, 230);
+}
