@@ -1,6 +1,5 @@
 var conts = document.querySelectorAll('.cont');
 var rem = document.getElementById('rem');
-console.log('Hello')
 
 rem.onclick = function () {
     var fst = document.getElementById('fst').value;
